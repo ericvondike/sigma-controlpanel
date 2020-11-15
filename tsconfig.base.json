@@ -25,7 +25,8 @@
   ],
   "include": [
     "src/**/*.d.ts",
-    "src/app/*.ts"
+    "src/app/*.ts",
+    "src/app/login/*.ts"
   ],
   "exclude": [
     "node_modules"

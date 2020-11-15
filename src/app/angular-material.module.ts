@@ -2,9 +2,9 @@ import "reflect-metadata";
 import "../polyfills";
 
 import { NgModule } from "@angular/core";
-import { CommonModule } from "@angular/common";
 
 import { MatBadgeModule } from "@angular/material/badge";
+import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from "@angular/material/button";
 import { MatChipsModule } from "@angular/material/chips";
 import { MatNativeDateModule } from "@angular/material/core";
@@ -22,9 +22,9 @@ import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
 
+
 @NgModule({
   imports: [
-    CommonModule,
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
@@ -44,13 +44,14 @@ import { MatTooltipModule } from "@angular/material/tooltip";
     MatPaginatorModule,
   ],
   exports: [
+    MatCardModule,
     MatButtonModule,
     MatToolbarModule,
-    MatIconModule,
     MatSidenavModule,
     MatBadgeModule,
     MatListModule,
     MatGridListModule,
+    MatIconModule,
     MatInputModule,
     MatFormFieldModule,
     MatSelectModule,
