@@ -16,7 +16,7 @@ export class LoginComponent implements OnInit {
   }
 
   login(): any {
-
+    this.router.navigateByUrl('/home');
   }
 
   gotoRegistrationPage(): any {
