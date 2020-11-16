@@ -1,15 +1,16 @@
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
 import { CommonModule } from '@angular/common';
-import { LoginComponent } from './login/login.component';
-
 import { AngularMaterialModule } from '../angular-material.module';
+
+
+import { RegisterComponent } from './register/register.component';
+import { LoginComponent } from './login/login.component';
 
 
 
 @NgModule({
-  declarations: [LoginComponent],
+  declarations: [LoginComponent, RegisterComponent],
   imports: [
     CommonModule,
     AngularMaterialModule,

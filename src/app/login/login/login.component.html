@@ -6,23 +6,32 @@
 
     <form class="login-form">
       <mat-card-content>
-        <mat-form-field appearance="fill" class="login-full-width">
+        <mat-form-field class="login-full-width">
           <mat-label>username</mat-label>
-          <input matInput  class="input-field" />
+          <input matInput class="input-field" />
         </mat-form-field>
 
-        <mat-form-field appearance="fill" class="login-full-width">
+        <mat-form-field class="login-full-width">
           <mat-label>password</mat-label>
-          <input matInput type="password"/>
+          <input matInput type="password" />
         </mat-form-field>
       </mat-card-content>
       <mat-card-actions class="actions" flex>
-        <button mat-raised-button color="primary" id="loginButton">Login</button>
-        <div style="display: inline;">
-          <button mat-raised-button class="btn btn-success ml-0 mt-5" style="float: left;">Sign Up</button>
-          <a href="#" style="float: right; font-size: 80%;" class="mt-5">Forgot password?</a>
-        </div>
+        <button mat-raised-button id="loginButton" (click)="login()">
+          Login
+        </button>
       </mat-card-actions>
     </form>
+    <div id="signupForget">
+      <button
+        mat-raised-button
+        (click)="gotoRegistrationPage()"
+        class="ml-0 mt-5"
+        id="signup"
+      >
+        Sign Up
+      </button>
+      <a role="button" href="register" class="mt-5">Forgot password?</a>
+    </div>
   </mat-card>
 </div>

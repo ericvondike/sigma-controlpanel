@@ -1,0 +1,35 @@
+<div class="signup-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Register</mat-card-title>
+    </mat-card-header>
+    <form class="signup-form">
+      <mat-card-content>
+        <mat-form-field class="signup-full-width">
+          <input matInput placeholder="username" class="input-field">
+        </mat-form-field>
+
+        <mat-form-field  class="signup-full-width">
+          <input matInput placeholder="password" type="password">
+        </mat-form-field>
+
+        <mat-form-field class="signup-full-width">
+          <input matInput placeholder="confirm password" type="password">
+        </mat-form-field>
+      </mat-card-content>
+      <mat-card-actions class="actions">
+        <button mat-raised-button id="signupButton">
+          Register
+        </button>
+      </mat-card-actions>
+    </form>
+    <div class="back-to-login">
+      <a
+        role="button"
+        href="login"
+        class="mt-5"
+        >Back to Login Page</a
+      >
+    </div>
+  </mat-card>
+</div>
