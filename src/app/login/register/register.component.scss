@@ -1,4 +1,4 @@
-.login-wrapper {
+.signup-wrapper {
   // background-image: url(https://lh4.googleusercontent.com/-XplyTa1Za-I/VMSgIyAYkHI/AAAAAAAADxM/oL-rD6VP4ts/w1184-h666/Android-Lollipop-wallpapers-Google-Now-Wallpaper-2.png);
   background-color: #4e348be6;
   background-position: center;
@@ -7,15 +7,10 @@
   height: 100%;
 }
 
-
-.login-wrapper {
+.signup-wrapper {
   height: 100%;
 }
 
-.positronx {
-  text-decoration: none;
-  color: #ffffff;
-}
 
 .box {
   position: relative;
@@ -57,77 +52,42 @@
   z-index: -1;
 }
 
-.login-wrapper .login-form {
+.signup-wrapper .signup-form {
   min-width: 100%;
   max-width: 300px;
   width: 100%;
 }
 
-.login-wrapper .login-full-width,
-.login-wrapper .btn-block {
+.signup-wrapper .signup-full-width,
+.signup-wrapper .btn-block {
   width: 100%;
 }
 
-.login-wrapper mat-card-header {
+.signup-wrapper mat-card-header {
   text-align: center;
   width: 100%;
   display: block;
   font-weight: 700;
 }
 
-.login-wrapper mat-card-header mat-card-title {
+.signup-wrapper mat-card-header mat-card-title {
   font-size: 30px;
   margin: 0;
 }
 
-.login-wrapper .mat-card {
+.signup-wrapper .mat-card {
   padding: 40px 70px 50px
 }
 
-
-.login-wrapper .mat-form-field-appearance-outline .mat-form-field-infix {
-  padding: 0.8375em 0
-}
-
-.actions {
-  display: block;
-}
-
-#loginButton:hover {
-  background-color: #F0AD4E;
-}
-
-#loginButton {
+#signupButton {
   width: 100%;
+  color: black;
   background-color: #FFF;
-  border: solid #F0AD4E;
+  border: 0.1px solid #F0AD4E;
 }
 
-#signupForget {
-  display: inline;
-}
-
-#signupForget .mat-raised-button {
-  float: left;
-}
-
-#signupForget .mat-raised-button:hover {
+#signupButton:hover {
   background-color: #F0AD4E;
-  border: solid #F0AD4E;
-  
-}
-
-#signupForget .mat-raised-button {
-  background-color: #5CB85C;
-  border: solid #D9534F;
-}
-
-#signupForget a {
-  float: right; 
-  font-size: 80%
 }
 
 
-    
-    
-    
