@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './shared/components';
 
-import { HomeRoutingModule } from './home/home-routing.module';
+import { LandingRoutingModule } from './landing/landing-routing.module';
 import { DetailRoutingModule } from './detail/detail-routing.module';
 
 import { LoginComponent } from './login/login/login.component';
@@ -17,10 +17,6 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent
   },
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-  // },
   {
     path: 'home',
     redirectTo: 'home',
@@ -40,7 +36,7 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes),
-    HomeRoutingModule,
+    LandingRoutingModule,
     DetailRoutingModule
   ],
   exports: [RouterModule]
