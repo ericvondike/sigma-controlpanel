@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './shared/components';
 
+/** Imports routing modules */
 import { LandingRoutingModule } from './landing/landing-routing.module';
 import { DetailRoutingModule } from './detail/detail-routing.module';
+import { HelpCenterRoutingModule } from './help-center/help-center-routing.module';
 
 import { LoginComponent } from './login/login/login.component';
 import { RegisterComponent } from './login/register/register.component';
@@ -19,8 +21,7 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
   },
   {
     path: '',
@@ -37,7 +38,8 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes),
     LandingRoutingModule,
-    DetailRoutingModule
+    DetailRoutingModule,
+    HelpCenterRoutingModule
   ],
   exports: [RouterModule]
 })

@@ -1,0 +1,85 @@
+<div class="content-container">
+  <mat-toolbar class="sidenav-content-toolbar" color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon class="material-icons" (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+      <h1>Sigma Control Panel</h1>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+        <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+        <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+        <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
+        <a mat-button [routerLink]="'/activities'"> Activities </a>
+        <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
+      </div>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row>
+      <span style="font-size: 12px">Sigma managers control panel</span>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav
+      #sidenav
+      class="sidenav"
+      fixedInViewport="false"
+      [attr.role]="'navigation'"
+      mode="over"
+      [(opened)]="opened"
+      role="navigation"
+    >
+      <mat-nav-list class="navigation-list">
+        <a
+          class="navigation-item home-button"
+          mat-list-item
+          routerLink="home"
+          routerLinkActive="active"
+          matTooltip="Home"
+          [matTooltipPosition]="'right'"
+          id="homeButton"
+        >
+          <mat-icon class="material-icons">home</mat-icon>
+        </a>
+        <mat-divider></mat-divider>
+        <a
+          class="navigation-item"
+          mat-list-item
+          routerLink="help"
+          routerLinkActive="active"
+          matTooltip="Help Center"
+          [matTooltipPosition]="'right'"
+        >
+          <mat-icon class="material-icons">help_center</mat-icon>
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content class="sidenav-content" role="navigation">
+      <!-- <mat-toolbar class="sidenav-content-toolbar" color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+          </button>
+          <h1>Sigma Control Panel</h1>
+          <span class="menu-spacer"></span>
+          <div>
+            <a mat-button [routerLink]="'/accounts'"> Accounts </a>
+            <a mat-button [routerLink]="'/create-account'"> Create Account </a>
+            <a mat-button [routerLink]="'/contacts'"> Contacts </a>
+            <a mat-button [routerLink]="'/create-contact'"> Create Contact </a>
+            <a mat-button [routerLink]="'/activities'"> Activities </a>
+            <a mat-button [routerLink]="'/create-activity'"> Create Activity </a>
+          </div>
+        </mat-toolbar-row>
+    
+        <mat-toolbar-row>
+          <span style="font-size: 12px">Sigma managers control panel</span>
+        </mat-toolbar-row>
+      </mat-toolbar> -->
+      <div>
+        <router-outlet> </router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

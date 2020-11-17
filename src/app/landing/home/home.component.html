@@ -1,7 +1,18 @@
 <div class="container">
-  <h1 class="title">
-    {{ 'PAGES.HOME.TITLE' | translate }}
-  </h1>
-
-  <a routerLink="/detail">{{ 'PAGES.HOME.GO_TO_DETAIL' | translate }}</a>
-</div>
+  <h2 class="mt-3">
+    {{'PAGES.HOME.WELCOME' | translate }}
+  </h2>
+  <mat-card class="attention-card mt-5">
+    <mat-card-title>Attention</mat-card-title>
+    <mat-card-subtitle>You are responsible of very important part of Sigma company.</mat-card-subtitle>
+    <mat-card-content>
+      <p>
+        As a Sigma manager, one of your responsibilities is to insure the integrity and coherence of Company's database.
+        So pay too much attention to all your acctivities. For each activity, if you are not sure, please find help via the help center
+        at your disposal.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button class="understandButton">I understand</button>
+    </mat-card-actions>
+  </mat-card>
