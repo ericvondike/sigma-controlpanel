@@ -2,8 +2,10 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PageNotFoundComponent } from './shared/components';
 
-import { HomeRoutingModule } from './home/home-routing.module';
+/** Imports routing modules */
+import { LandingRoutingModule } from './landing/landing-routing.module';
 import { DetailRoutingModule } from './detail/detail-routing.module';
+import { HelpCenterRoutingModule } from './help-center/help-center-routing.module';
 
 import { LoginComponent } from './login/login/login.component';
 import { RegisterComponent } from './login/register/register.component';
@@ -17,14 +19,9 @@ const routes: Routes = [
     path: 'register',
     component: RegisterComponent
   },
-  // {
-  //   path: 'home',
-  //   loadChildren: () => import('./home/home.module').then(m => m.HomeModule),
-  // },
   {
     path: 'home',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
   },
   {
     path: '',
@@ -40,8 +37,9 @@ const routes: Routes = [
 @NgModule({
   imports: [
     RouterModule.forRoot(routes),
-    HomeRoutingModule,
-    DetailRoutingModule
+    LandingRoutingModule,
+    DetailRoutingModule,
+    HelpCenterRoutingModule
   ],
   exports: [RouterModule]
 })

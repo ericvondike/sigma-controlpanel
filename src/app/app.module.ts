@@ -14,8 +14,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-import { HomeModule } from './home/home.module';
+import { LandingModule } from './landing/landing.module';
 import { DetailModule } from './detail/detail.module';
+import { HelpCenterModule } from './help-center/help-center.module';
 
 import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
@@ -36,9 +37,10 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     HttpClientModule,
     CoreModule,
     SharedModule,
-    HomeModule,
+    LandingModule,
     DetailModule,
     LoginModule,
+    HelpCenterModule,
     AppRoutingModule,
     NgbModule,
     TranslateModule.forRoot({
