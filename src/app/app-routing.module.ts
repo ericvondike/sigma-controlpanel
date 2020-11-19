@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { Routes, RouterModule, PreloadAllModules } from '@angular/router';
 import { PageNotFoundComponent } from './shared/components';
 
 /** Imports routing modules */
 import { LandingRoutingModule } from './landing/landing-routing.module';
 import { DetailRoutingModule } from './detail/detail-routing.module';
 import { HelpCenterRoutingModule } from './help-center/help-center-routing.module';
+import { SigmaSettingsRoutingModule } from './sigma-settings/sigma-settings-routing.module';
 
 import { LoginComponent } from './login/login/login.component';
 import { RegisterComponent } from './login/register/register.component';
@@ -20,7 +21,7 @@ const routes: Routes = [
     component: RegisterComponent
   },
   {
-    path: 'home',
+    path: 'dashboard',
     loadChildren: () => import('./landing/landing.module').then(m => m.LandingModule)
   },
   {
@@ -36,10 +37,15 @@ const routes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot(routes, {
+      useHash: true,
+      scrollPositionRestoration: 'enabled',
+      preloadingStrategy: PreloadAllModules
+    }),
     LandingRoutingModule,
     DetailRoutingModule,
-    HelpCenterRoutingModule
+    HelpCenterRoutingModule,
+    SigmaSettingsRoutingModule
   ],
   exports: [RouterModule]
 })
