@@ -24,7 +24,7 @@ const routes: Routes = [
       {
         path: 'home',
         component: HomeComponent,
-        data: { title: 'anms.menu.about' }
+        data: { title: 'sigma.menu.about' }
       },
       {
         path: 'detail',

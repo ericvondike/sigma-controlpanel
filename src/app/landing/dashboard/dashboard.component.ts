@@ -45,13 +45,13 @@ export class DashboardComponent implements OnInit {
   logo = require('../../../assets/logo.png').default;
   languages = ['en', 'de', 'sk', 'fr', 'es', 'pt-br', 'zh-cn', 'he'];
   navigation = [
-    { link: 'home', label: 'anms.menu.about' },
-    { link: 'feature-list', label: 'anms.menu.features' },
-    { link: 'examples', label: 'anms.menu.examples' }
+    { link: 'home', label: 'sigma.menu.about' },
+    { link: 'feature-list', label: 'sigma.menu.features' },
+    { link: 'examples', label: 'sigma.menu.examples' }
   ];
   navigationSideMenu = [
     ...this.navigation,
-    { link: 'settings', label: 'anms.menu.settings' }
+    { link: 'settings', label: 'sigma.menu.settings' }
   ];
 
   isAuthenticated$: Observable<boolean>;
