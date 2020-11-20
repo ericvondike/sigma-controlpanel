@@ -53,7 +53,7 @@
   "sigma.footer.changelog": "Show changelog",
   "sigma.header.github": "Project Github Repository",
   "sigma.menu.about": "About",
-  "sigma.menu.examples": "Examples",
+  "sigma.menu.panel": "Panel",
   "sigma.menu.features": "Features",
   "sigma.menu.login": "Sign in",
   "sigma.menu.logout": "Logout",
@@ -82,5 +82,5 @@
   "sigma.settings.themes.title": "Themes",
   "sigma.settings.title": "Settings",
   "sigma.title.long": "Sigma Managers Control Panel",
-  "sigma.title.short": "Angular Starter"
+  "sigma.title.short": "Control Panel"
 }

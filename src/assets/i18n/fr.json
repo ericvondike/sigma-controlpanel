@@ -39,7 +39,7 @@
   "sigma.footer.changelog": "Afficher le journal des changements",
   "sigma.header.github": "Dépot Github",
   "sigma.menu.about": "À propos",
-  "sigma.menu.examples": "Exemples",
+  "sigma.menu.panel": "Panneau",
   "sigma.menu.features": "Fonctionnalités",
   "sigma.menu.login": "Connexion",
   "sigma.menu.logout": "Déconnexion",

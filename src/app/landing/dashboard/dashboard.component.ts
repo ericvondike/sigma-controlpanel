@@ -47,7 +47,7 @@ export class DashboardComponent implements OnInit {
   navigation = [
     { link: 'home', label: 'sigma.menu.about' },
     { link: 'feature-list', label: 'sigma.menu.features' },
-    { link: 'examples', label: 'sigma.menu.examples' }
+    { link: 'examples', label: 'sigma.menu.panel' }
   ];
   navigationSideMenu = [
     ...this.navigation,
