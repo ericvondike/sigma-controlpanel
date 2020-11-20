@@ -18,9 +18,12 @@ import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatRadioModule } from "@angular/material/radio";
 import { MatSelectModule } from "@angular/material/select";
 import { MatSidenavModule } from "@angular/material/sidenav";
+import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from "@angular/material/table";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { MatTooltipModule } from "@angular/material/tooltip";
+import { MatMenuModule } from '@angular/material/menu';
+import { MatExpansionModule}  from '@angular/material/expansion';
 
 
 @NgModule({
@@ -61,6 +64,9 @@ import { MatTooltipModule } from "@angular/material/tooltip";
     MatTooltipModule,
     MatTableModule,
     MatPaginatorModule,
+    MatExpansionModule,
+    MatSortModule,
+    MatMenuModule
   ],
   providers: [MatDatepickerModule],
 })

@@ -17,6 +17,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { LandingModule } from './landing/landing.module';
 import { DetailModule } from './detail/detail.module';
 import { HelpCenterModule } from './help-center/help-center.module';
+import { SigmaSettingsModule } from './sigma-settings/sigma-settings.module';
 
 import { AppComponent } from './app.component';
 import { LoginModule } from './login/login.module';
@@ -41,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient): TranslateHttpLoader {
     DetailModule,
     LoginModule,
     HelpCenterModule,
+    SigmaSettingsModule,
     AppRoutingModule,
     NgbModule,
     TranslateModule.forRoot({

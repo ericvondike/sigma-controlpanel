@@ -1,0 +1,9 @@
+$sigma-light-primary: mat-palette($mat-grey, 200, 500, 300);
+$sigma-light-accent: mat-palette($mat-brown, 200);
+$sigma-light-warn: mat-palette($mat-deep-orange, 200);
+
+$sigma-light-theme: mat-light-theme(
+  $sigma-light-primary,
+  $sigma-light-accent,
+  $sigma-light-warn
+);

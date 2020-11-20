@@ -1,0 +1,9 @@
+$sigma-nature-primary: mat-palette($mat-brown, 700, 300, 900);
+$sigma-nature-accent: mat-palette($mat-deep-purple, 300);
+$sigma-nature-warn: mat-palette($mat-red, 600);
+
+$sigma-nature-theme: mat-light-theme(
+  $sigma-nature-primary,
+  $sigma-nature-accent,
+  $sigma-nature-warn
+);

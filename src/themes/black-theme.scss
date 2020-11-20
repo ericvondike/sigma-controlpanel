@@ -1,0 +1,9 @@
+$sigma-black-primary: mat-palette($mat-grey, 700, 300, 900);
+$sigma-black-accent: mat-palette($mat-blue-grey, 400);
+$sigma-black-warn: mat-palette($mat-red, 500);
+
+$sigma-black-theme: mat-dark-theme(
+  $sigma-black-primary,
+  $sigma-black-accent,
+  $sigma-black-warn
+);
